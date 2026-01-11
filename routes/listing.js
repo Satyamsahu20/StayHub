@@ -20,6 +20,8 @@ router
         wrapAsync(listingController.createListing)
     );
 
+router.get("/search", listingController.search);
+
 // // New Route
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
